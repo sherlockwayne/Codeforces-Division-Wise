@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% for(res_obj of res) { %>
+    <h1><a href="https://codeforces.com/contest/<%= res_obj.id %>"><%= res_obj.name %></a></h1>
+    <% } %>
+  </body>
+</html>
